@@ -28,9 +28,9 @@ app.use(allowCrossDomain);
 app.use(passport.initialize());
 require("./middlewares/passport")(passport);
 
-const mongoDB = 'mongodb+srv://entrpnr-notrs:9YBhUUNyCxzmqwOV@clusternotrs.3ia21.mongodb.net/ticketsys?retryWrites=true&w=majority'
+//const mongoDB = 'mongodb+srv://entrpnr-notrs:9YBhUUNyCxzmqwOV@clusternotrs.3ia21.mongodb.net/ticketsys?retryWrites=true&w=majority'
 
-// const mongoDB = 'mongodb+srv://varun:varun01!@cluster0.fonkr.mongodb.net/reactTicket?retryWrites=true&w=majority'
+const mongoDB = 'mongodb+srv://varun:varun01!@cluster0.fonkr.mongodb.net/reactTicket?retryWrites=true&w=majority'
 mongoose.connect(mongoDB,{
   useCreateIndex: true,
     useNewUrlParser: true,
