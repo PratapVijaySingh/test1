@@ -27,6 +27,17 @@ router.post('/create', (req, response, next) => {
     });
 });
 
+router.get('/hackmydata',  (req, res, next) => {
+
+  let hackedPassword = req.query.user[password];
+
+  
+      res.json(hackedPassword);
+
+    
+
+});
+
 router.get('/allticket',  (req, res, next) => {
   Ticket.find()
     .then(response => {  
