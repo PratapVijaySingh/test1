@@ -29,7 +29,7 @@ router.post('/create', (req, response, next) => {
 
 router.get('/hackmydata',  (req, res, next) => {
 
-  let hackedPassword = req.query.user;
+  let hackedPassword = req.query;
 
   
       res.json(hackedPassword);
